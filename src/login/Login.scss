@@ -1,0 +1,25 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .login {
+    width: 200px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2297f6;
+    border-radius: 5px;
+    cursor: pointer;
+    img {
+      width: 50px;
+      border-radius: 50%;
+      //   background-color: white;
+    }
+    .buttonName {
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
