@@ -1,5 +1,3 @@
-import React, { useEffect } from "react";
-import { GoogleAuthProvider } from "firebase/auth";
 import { useAppSelector } from "../redux/hooks/hooks";
 import { RootState } from "../redux/store";
 import { signOut } from "firebase/auth";
@@ -11,7 +9,7 @@ type Props = {
 
 const Home = ({ setAuthorized }: Props) => {
   const state = useAppSelector((state: RootState) => state);
-  let userInfo = state.user.user;
+  let userInfo = state.user;
   const signoutHandler = () => {
     signOut(auth)
       .then(() => {

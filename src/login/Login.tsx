@@ -1,6 +1,5 @@
-import React from "react";
-import "./Login.scss";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import "./Login.scss"; //sassファイルはgithub上で確認できます。
+import { signInWithPopup } from "firebase/auth";
 import { provider } from "../Firebase";
 import { useAppDispatch } from "../redux/hooks/hooks";
 import { login } from "../redux/auth/user";
