@@ -17,10 +17,10 @@ const user = createSlice({
   name: "user",
   initialState,
   reducers: {
-    login(state, { type, payload }) {
+    login(state, { payload }) {
       state.user = payload;
     },
-    logout(state, { type, payload }) {
+    logout(state, { payload }) {
       state.user = null;
     },
   },
